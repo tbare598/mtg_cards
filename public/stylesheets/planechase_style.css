@@ -1,0 +1,38 @@
+.planechaseCard {
+    width: 445px;
+    height: 310px;
+}
+
+.cardTd {
+    width: 450px;
+    height: 315px;
+}
+
+.selectedTd{
+    background: rgb(63, 255, 0);
+}
+
+#tblPlanechaseRevealedCards img {
+    width: 47px;
+    height: 34px;
+    padding: 1px;
+}
+
+#tblPlanechaseRevealedCards td {
+    padding: 3px;
+}
+
+.rollButton {
+    height: 120px;
+    font-weight: bold;
+}
+
+.dieStatus {
+    height: 40px;
+    width: 150px;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+}

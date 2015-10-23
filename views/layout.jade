@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    script(src='/javascripts/socket.io/socket.io.js')
+    script(src='//code.jquery.com/jquery-2.1.3.js')
+    script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+    script(src='/javascripts/universal.js')
+    link(rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    title= title
+  body
+    a(href="/") Home
+    |  | 
+    a(href="/planechase") Planechase
+    block content

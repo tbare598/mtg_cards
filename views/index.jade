@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    div(ng:controller="CardContr")
+        table#tblCards
+            tbody
+                tr
+                    td(class="tdCardSearch")
+                        table#tblSearch
+                            tbody
+                                tr
+                                    td(class="tdCardSearch")
+                                        input#cardSearch(placeholder="Card Name" class="txtCardSearch")
+                    td
+                        table#tblDeck
+                            tbody
+                                tr
+                                    td
+                                        h1 Deck
+        div
+            img#imgCard(src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=0&type=card"
+                        alt="Magic_Card" 
+                        class="cardImg"
+                        style="display: none;")
+            
+    script(src="/javascripts/main.js")

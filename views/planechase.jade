@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    script(src="/javascripts/planechase.js")
+    link(rel='stylesheet', href='/stylesheets/planechase_style.css')
+    table#tblPlaneChase
+        tbody
+            tr
+                td(class="cardTd")
+                    img#imgCard(src=""
+                                alt="Planechase" 
+                                class="cardImg planechaseCard")
+                td
+                    table#tblPlaneChaseButtons
+                        tr
+                            td
+                                button#btnNewGame(type='button') New Game
+                        tr
+                            td
+                                input#lblPlanarDieStatus(type='text'
+                                                         value='Blank'
+                                                         class='dieStatus')
+                        tr
+                            td
+                                button#btnRollPlanarDie(type='button'
+                                                        class='rollButton') Roll
+                        tr
+                            td
+                                button#btnPlanesWalk(type='button') Planes Walk
+                        tr
+                            td
+                                button#btnRevealNextCard(type='button') Reveal Next Card
+                td
+                    table#tblRevealedButtons(style='display:none')
+                        tr
+                            td
+                                button#btnPutOnTop(type='button') Put On Top
+                        tr
+                            td
+                                button#btnPutOnBottom(type='button') Put On Bottom
+                        tr
+                            td
+                                button#btnDiscard(type='button') Discard
+            tr
+                td
+                    table#tblPlanechaseRevealedCards(cellspacing="0")

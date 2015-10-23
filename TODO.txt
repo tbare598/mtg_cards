@@ -1,0 +1,16 @@
+GENERAL
+-Add to Git
+
+Deck Building Page
+-Save Deck to DB
+-Save Deck to User
+-Image Recognition
+
+Game Page
+-Start
+
+Planechase
+-Preload images
+-Finish Revealed Cards Buttons
+-After putting a revealed card somewhere(top/bottom/discard),
+  make sure to update the screen, and shift the cards down

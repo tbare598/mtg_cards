@@ -1,0 +1,46 @@
+h1 {
+  margin: 0;
+}
+
+.tdCardSearch {
+    vertical-align: top;
+}
+
+.txtCardSearch {
+  width: 250px;
+}
+
+.cardImg {
+    border:none;
+    border-radius:13px;
+    -webkit-border-radius:13px;
+    -moz-border-radius:13px;
+}
+
+/* AUTO-COMPLETE */
+/* highlight results */
+.ui-autocomplete span.hl_results {
+    background-color: #ffff66;
+}
+ 
+/* scroll results */
+.ui-autocomplete {
+    max-height: 250px;
+    max-width: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding for vertical scrollbar */
+    padding-right: 5px;
+}
+ 
+.ui-autocomplete li {
+    font-size: 16px;
+}
+ 
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 500px;
+}
