@@ -6,8 +6,9 @@ $(function(){
     var currImgURL = "";
     var tblRevealedCardsID = "#tblPlanechaseRevealedCards";
     
-    // creating a new websocket
-    var socket = io.connect('http://thisguy.website:12121/');
+    // creating a new websocket with the domain and port number
+	var full = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+    var socket = io.connect(full);
     socket.emit('Planechase.pageLoaded');
     socket.on('server.pageLoaded.receivedResponse', function (data) {
         showCard(data.shownCard);
